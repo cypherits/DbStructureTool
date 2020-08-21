@@ -1,0 +1,46 @@
+body{
+	background: chocolate;
+}
+@media print{
+	body{
+		background: white;
+	}
+}
+@media print {
+    .pagebreak { page-break-after: always ; } /* page-break-after works, as well */
+}
+.container{
+	background: white;
+}
+.headings{
+    color: chocolate;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid  chocolate;
+    margin-bottom: 1em;
+}
+.headings h4{
+    padding: 0px;
+    margin: 0px;
+    line-height: 1;
+}
+.custom_head{
+	color: chocolate;
+	margin: 0;
+	padding: 10px;
+	background: rgba(210, 105, 30, 0.2);
+	margin-bottom: 0.5em;
+	font-size: 1.25rem;
+}
+.table-custom thead{
+	background: rgba(210, 105, 30, 0.35);
+}
+.table-custom td, .table-custom th{
+	border-top: 1px solid chocolate;
+	color: #b75d1c;
+	padding: .25rem .75rem;
+}
+.table-custom tr:nth-child(even) {
+	background-color: rgba(210, 105, 30, 0.1);
+}
